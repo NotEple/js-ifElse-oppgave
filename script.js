@@ -13,7 +13,6 @@ if (userName === "John" && userCity === "Bergen") {
 
 /**
  * The calculator takes in 3 parameters
- * @typedef {operators}
  * @param {number} num1 - Number
  * @param {number} num2 - Number
  * @param {"+" | "-" | "*" | "/"} operator - String with `+` | `-` | `*` | `/`
