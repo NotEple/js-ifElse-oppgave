@@ -4,7 +4,7 @@ let userCity = "Bergen";
 
 if (userAge > 18) {
   console.log("Du er over 18, velkommen inn!");
-} else if (userAge <= 18 || userCity === "Oslo") {
+} else if (userAge <= 18 || userCity !== userCity) {
   console.log("Du er ikke gammel nok, og du er fra feil by");
 }
 if (userName === "John" && userCity === "Bergen") {
@@ -18,7 +18,7 @@ if (userName === "John" && userCity === "Bergen") {
  * @param {"+" | "-" | "*" | "/"} operator - String with `+` | `-` | `*` | `/`
  * @example calculator(30, 60, "+")
  * @returns {number|string} `90`, but in some cases if the user fails to provide a valid operator, or no operator at all, it will result in a error message.
- * @example "Please provide a operator..." or "Please provide a valid operator..."
+ * @example "Please provide an operator..." or "Please provide a valid operator..."
  */
 const calculator = (num1, num2, operator) => {
   console.log(num1, num2, operator);
@@ -36,7 +36,7 @@ const calculator = (num1, num2, operator) => {
       return num1 / num2;
 
     case undefined:
-      return "Please provide a operator...";
+      return "Please provide an operator...";
     default:
       return "Please provide a valid operator...";
   }
